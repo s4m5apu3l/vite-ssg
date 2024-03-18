@@ -1,0 +1,118 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.gap-5 {
+    gap: 5px;
+}
+.gap-8 {
+    gap: 8px;
+}
+.gap-16 {
+    gap: 16px;
+}
+.gap-32 {
+    gap: 32px;
+}
+.mt-60 {
+    margin-top: 60px;
+    @media screen and (max-width: 768px) {
+        margin-top: 30px;
+    }
+}
+.mt-50 {
+    margin-top: 50px;
+    @media screen and (max-width: 768px) {
+        margin-top: 30px;
+    }
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.my-40 {
+    margin: 40px 0;
+}
+
+.l-btn {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px 20px;
+    border-radius: 8px;
+    &.size-full {
+        max-width: 100%;
+        width: 100%;
+    }
+    &.size-130 {
+        max-width: 130px;
+        width: 100%;
+    }
+    &.l-btn--red {
+        background-color: #e84d60;
+    }
+}
+.l-title {
+    color: #3f3f3f;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    @include max-560 {
+        font-size: 21px;
+    }
+}
+.l-bold {
+    font-weight: 700;
+}
+
+.icon-crest {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    span {
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 12px;
+        height: 2px;
+        background-color: #0D4C57;
+        border-radius: 2px;
+        transition: all .3s ease;
+        &:last-child {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.l-tab-content {
+    display: none;
+    &.active {
+        display: block;
+    }
+}

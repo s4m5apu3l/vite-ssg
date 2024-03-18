@@ -1,0 +1,39 @@
+@mixin max-1440 {
+    @media screen and (max-width: 1440px) {
+        @content;
+    }
+}
+@mixin max-1090 {
+    @media screen and (max-width: 1090px) {
+        @content;
+    }
+}
+@mixin max-910 {
+    @media screen and (max-width: 910px) {
+        @content;
+    }
+}
+@mixin max-768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin max-560 {
+    @media screen and (max-width: 560px) {
+        @content;
+    }
+}
+
+@mixin max-510 {
+    @media screen and (max-width: 510px) {
+        @content;
+    }
+}
+
+// dynamic mixin i forgot about that
+@mixin max-screen($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
